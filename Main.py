@@ -137,8 +137,8 @@ def obter_enunciado_tratado(enunciado):
     if enunciado_list:
         enunciado_list.pop()
 
-    if enunciado_list[0] == 'RECAPTULAÇÃO':
-        enunciado_list = enunciado_list[4:]
+    if enunciado_list[0] == 'RECAPITULAÇÃO':
+        enunciado_list = enunciado_list[1:]
     elif enunciado_list[0] == 'HORA DE RECAPITULAR':
         enunciado_list = enunciado_list[2:]
     else:
@@ -275,5 +275,5 @@ def main(tipo='RECAPITULAÇÃO'):
             driver.quit()
 
 
-#main(tipo = 'SALA DE QUIZ')
+# main(tipo = 'SALA DE QUIZ')
 main(tipo = 'RECAPITULAÇÃO')
